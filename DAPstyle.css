@@ -1,0 +1,437 @@
+* {
+    font-family: 'avenir-medium' !important;
+}
+
+/*font faces*/
+
+@font-face {
+    font-family: 'avenir-heavy';
+    src: url('fonts/Avenir-Heavy.ttf') format('TrueType');
+}
+
+@font-face {
+    font-family: 'avenir-medium';
+    src: url('fonts/Avenir-Medium.ttf') format('TrueType');
+}
+
+@font-face {
+    font-family: 'avenir-black';
+    src: url('fonts/Avenir-Black.ttf') format('TrueType');
+}
+
+@font-face {
+    font-family: 'avenir-roman';
+    src: url('fonts/Avenir-Roman.otf') format('OpenType');
+}
+
+@font-face {
+    font-family: 'avenir-book';
+    src: url('fonts/Avenir-Book.ttf') format('TrueType');
+}
+
+@font-face {
+    font-family: 'avenir-light';
+    src: url('fonts/Avenir-Light.ttf') format('TrueType');
+}
+
+/*font families*/
+
+.avenir-heavy {
+    font-family: 'avenir-heavy';
+}
+
+.avenir-medium {
+    font-family: 'avenir-medium' !important;
+}
+
+.avenir-light {
+    font-family: 'avnir-light' !important;
+}
+
+.avenir-black {
+    font-family: 'avenir-black' !important;
+}
+
+.avenir-roman {
+    font-family: 'avenir-roman';
+}
+
+.avenir-book {
+    font-family: 'avenir-book';
+}
+
+
+/*common font sizes*/
+
+.font-10 {
+    font-size: 10px !important;
+}
+
+.font-12 {
+    font-size: 12px !important;
+}
+
+.font-14 {
+    font-size: 14px !important;
+}
+
+.font-16 {
+    font-size: 16px !important;
+}
+
+.font-18 {
+    font-size: 18px !important;
+}
+
+.font-20 {
+    font-size: 20px !important;
+}
+
+.font-22 {
+    font-size: 22px !important;
+}
+
+.font-24 {
+    font-size: 24px !important;
+}
+
+.font-26 {
+    font-size: 26px !important;
+}
+
+.font-28 {
+    font-size: 28px !important;
+}
+
+.font-30 {
+    font-size: 30px !important;
+}
+
+.font-35 {
+    font-size: 35px !important;
+}
+
+.font-40 {
+    font-size: 40px !important;
+}
+
+.font-48 {
+    font-size: 48px !important;
+}
+
+/* DAP homepage */
+
+.dap-hero-wrap {
+    margin: 25% auto;
+}
+
+.dap-hero-wrap h1 {
+    font-size: 35px;
+    line-height: 45px;
+}
+
+.dap-nav {
+    width: 100%;
+}
+
+
+.dap-login-btn {
+    border: 1px solid #f8981d !important;
+    border-radius: 35px;
+    padding: 5px 30px !important;
+    text-transform: uppercase;
+    outline: none !important;
+    color: #f8981d !important;
+    margin: 3px 10px;
+}
+
+.dap-signup-btn {
+    background-color: #EF7034;
+    padding: 9px 29px;
+    color: #FFFFFF;
+    outline: none !important;
+    border-radius: 35px;
+    letter-spacing: 1px;
+    margin-top: 15px;
+    outline: none;
+    border: none;
+    display: block;
+}
+
+
+.dap-login-btn:hover {
+    background-color: #f8981d;
+    color: #ffffff !important;
+}
+
+
+.sidepanel {
+    width: 0;
+    position: fixed;
+    z-index: 999;
+    height: 100vh;
+    top: 0;
+    right: 0;
+    background-color: #fff;
+    overflow-x: hidden;
+    transition: .5s;
+    padding-top: 60px;
+    border-radius: 5px;
+    padding-bottom: 20px;
+    overflow: hidden
+}
+
+.sidepanel a {
+    padding: 8px 8px 8px 30px;
+    text-decoration: none;
+    font-size: 20px;
+    color: #212529;
+    display: block;
+    transition: .3s;
+    white-space: nowrap
+}
+
+.sidepanel a:hover {
+    color: #93b2f9
+}
+
+.sidepanel a:active {
+    color: #f7964f
+}
+
+.sidepanel .closebtn {
+    right: 25px;
+    font-size: 36px
+}
+
+.openbtn,
+.sidepanel .closebtn {
+    position: absolute;
+    top: 0;
+    outline: none !important
+}
+
+.openbtn {
+    font-size: 20px;
+    cursor: pointer;
+    color: #262261;
+    padding: 0 10px;
+    border: none;
+    border-radius: 5px;
+    right: 0;
+    margin: 20px auto;
+    display: none;
+    font-size: 30px
+}
+
+.openbtn,
+.openbtn:hover {
+    background-color: #fff
+}
+
+.dap-title {
+    width: 100%;
+    font-family: 'avenir-black' !important;
+    font-size: 20px;
+
+}
+
+
+.cardimg-wrap img {
+    height: 200px;
+    object-fit: contain;
+    width: 200px;
+}
+
+
+.card-title-m {
+    color: #EF7034;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.nav-tabs .dap-tab-link {
+    color: #666666;
+    border: none;
+}
+
+
+.nav-tabs .dap-tab-link.active {
+    color: #EF7034 !important;
+    border-bottom: 3px solid #EF7034;
+
+}
+
+.tabimg-wrap {
+    max-width: 50%;
+    margin: 5% auto;
+    padding: 10px;
+}
+
+
+.carousel-indicators {
+    display: none;
+}
+
+.trial-btn {
+    background-color: #EF7034;
+    border: none;
+    color: #F6F6F6;
+    padding: 7px 20px;
+    border-radius: 30px;
+}
+
+.plans-wrap {
+    background-color: #F6F6F6;
+}
+
+.plan-card {
+    box-shadow: 0px 3px 6px #00000029;
+    border-radius: 10px;
+    width: auto;
+    min-width: 200px;
+    max-width: 200px;
+    margin-right: 30px;
+}
+
+.plan-header {
+    background-color: #E2EAFF;
+    border-radius: 10px 10px 0px 0px;
+    color: #0D2A77;
+    font-weight: bold;
+}
+
+.plan-value {
+    color: #EF7034;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.dapcont-btn {
+    background-color: #EF7034;
+    border: none;
+    border-radius: 35px;
+    padding: 10px 30px !important;
+    outline: none !important;
+    width: 200px;
+    color: #F6F6F6 !important;
+}
+
+
+.pic-wrapper {
+    width: 200px;
+    height: auto;
+    object-fit: contain;
+}
+
+.customer-block {
+    border: 2px solid #C9D7FF;
+    border-radius: 15px;
+}
+
+.customer-block h5 {
+    color: #EF7034;
+}
+
+ul.social-wrap {
+    padding-left: 0;
+    list-style: none;
+    display: flex;
+}
+
+.social-wrap li {
+    margin-right: 10px;
+    cursor: pointer;
+    width: 35px;
+}
+
+.footer-block {
+    background-color: #EFF3FF;
+}
+
+.footer-cont-wrap p {
+    margin-bottom: 0px;
+}
+
+.brand-wrap {
+    width: 100px;
+    margin: 15px 0px;
+    object-fit: contain;
+}
+
+
+.cont-title {
+    color: #949494;
+    font-size: 12px;
+}
+
+.footer-cont-wrap a {
+    color: #000000;
+}
+
+.carousel-control-next-icon {
+    background-image: url("images/or-right.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 100px;
+    height: 50px;
+}
+
+.carousel-control-prev-icon {
+    background-image: url("images/or-left.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 100px;
+    height: 50px;
+}
+
+.carousel-control-prev {
+    left: -50px;
+}
+
+
+.carousel-control-next {
+    right: -50px;
+}
+
+
+@media (min-width:320px) and (max-width:767px) {
+
+
+    .dap-hero-wrap {
+        margin: 10% auto;
+    }
+
+
+    .dap-hero-wrap h1 {
+        font-size: 30px;
+        line-height: 35px;
+    }
+
+    .openbtn {
+        display: block;
+    }
+
+    .dap-hero-wrap {
+        text-align: center;
+    }
+
+    .dap-signup-btn {
+        display: inline-block;
+
+    }
+
+    .dap-twrap {
+        padding: 15px;
+    }
+
+}
+
+@media (min-width: 768px) and (max-width: 900px) {
+
+    .openbtn {
+        display: block;
+    }
+
+
+}

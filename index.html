@@ -1,0 +1,526 @@
+<html>
+
+<head>
+    <title>DAP - Bootstarp</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="DAPstyle.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="row">
+            <nav class="dap-nav navbar navbar-default navbar-expand-lg navbar-light mb-3">
+                <div class="navbar-header">
+                    <a class="navbar-brand" href="/">
+                        <img alt="Brand-logo" src="images/brand.png">
+                    </a>
+                </div>
+                <div class="collapse navbar-collapse justify-content-start" id="">
+                    <ul class="nav navbar-nav navbar-right ml-auto">
+                        <li class="nav-item">
+                            <a class="nav-link no-outline" href="/about-us">Contact us</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="dap-login-btn nav-link dap-reg-btn no-outline" data-target="#userModalCenter" data-toggle="modal" href="/coming-soon">LOGIN</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="sidepanel" id="dapmblmenu">
+                    <a class="closebtn" href="javascript:void(0)" onclick="closeNav()">×</a>
+                    <a href="/coming-soon">Contact us</a>
+                    <a href="/coming-soon">Login</a>
+                    <a href="/coming-soon">SignUp</a>
+                </div>
+                <button class="openbtn" onclick="openNav()">☰</button>
+                <script>
+                    function openNav() {
+                    document.getElementById("dapmblmenu").style.width = "70%";
+                }
+
+                function closeNav() {
+                    document.getElementById("dapmblmenu").style.width = "0";
+                }
+                $(document).ready(function() {
+                    $('[data-toggle="tooltip"]').tooltip();
+                });
+                </script>
+            </nav>
+        </div>
+        <div class="row">
+            <div class="col-md-6">
+                <div class="dap-hero-wrap">
+                    <h1 class="avenir-black">
+                        Selling Digital products <br> made easy!
+                    </h1>
+                    <span>We made it easier than ever</span>
+                    <button type="button" class="dap-signup-btn avenir-black">Learn how</button>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="img-wrap">
+                    <img alt="Bootstrap Image Preview" class="img-fluid" src="images/dap-mockup.png" />
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12">
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="">
+                            <div class="dap-twrap text-center mb-5 mt-5">
+                                <h5 class="dap-title">
+                                    What is Digital Assistant pro?
+                                </h5>
+                                <p class="card-text">
+                                    Digital Assistant Pro is a shopify plugin which helps the business owners to sell their digital products online with ease. These digital products can be ebooks, app subscriptions, giftcards, extended warranties, online courses, Software tools, Videos, Images, Audio books and clips, Music and ringtones, Graphics and digital arts, Documents templates, magazines etc.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <img src="images/shopify-ss.png" class="img-fluid mb-5">
+                    <h5 class="dap-title text-center mb-5">
+                        How it works?
+                    </h5>
+                    <div class="row">
+                        <div class="col-md-4">
+                            <div class="card text-center border-0">
+                                <div class="cardimg-wrap">
+                                    <img class="card-img-top" src="images/signup.png" alt="Card image cap">
+                                </div>
+                                <div class="card-body">
+                                    <h5 class="card-title-m m-1">Signup</h5>
+                                    <p class="font-14">Just sign up from the website or directly from the shopify app store . </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="card text-center border-0">
+                                <div class="cardimg-wrap">
+                                    <img class="card-img-top" src="images/sync.png" alt="Card image cap">
+                                </div>
+                                <div class="card-body">
+                                    <h5 class="card-title-m m-1">Sync</h5>
+                                    <p class="font-14">Sync your Shopify account with the DAP</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="card text-center border-0">
+                                <div class="cardimg-wrap">
+                                    <img class="card-img-top" src="images/sell.png" alt="Card image cap">
+                                </div>
+                                <div class="card-body">
+                                    <h5 class="card-title-m  m-1">Sell</h5>
+                                    <p class="font-14">Start selling your digital products with our feature loaded dashboard</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <h3 class="dap-title text-center mb-5">
+                Our Products
+            </h3>
+            <div class="tabbable w-100" id="dap-tabs">
+                <ul class="nav nav-tabs">
+                    <li class="nav-item w-50 text-center ">
+                        <a class="nav-link active avenir-black dap-tab-link" href="#tab1" data-toggle="tab">Digital order fulfillment</a>
+                    </li>
+                    <li class="nav-item w-50 text-center avenir-black">
+                        <a class="nav-link avenir-black dap-tab-link" href="#tab2" data-toggle="tab">Customer review management</a>
+                    </li>
+                </ul>
+                <div class="tab-content">
+                    <!-- Tab one content -->
+                    <div class="tab-pane active" id="tab1">
+                        <div class="row">
+                            <div class="col-md-12">
+                                <div class="tabimg-wrap">
+                                    <img alt="Bootstrap Image Preview" class="img-fluid" src="images/digital-fulfill.png">
+                                </div>
+                                <div class="dap-twrap text-center mb-5">
+                                    <h5 class="dap-title">
+                                        What is Digital Order Fulfillment?
+                                    </h5>
+                                    <p class="card-text">
+                                        This helps Business owners to deliver their digital products to their customers with ease. Once the business owner has marked that the payment is received, Digital Fulfillment will jump on to work. It ensures that the product is delivered with all the necessary supporting documents so that the end consumer likes your business.Is also provides the necessary consumer support in case of any unforeseen circumstances.
+                                    </p>
+                                </div>
+                                <h3 class="dap-title text-center mb-5">
+                                    Our core features
+                                </h3>
+                                <div class="row">
+                                    <div class="col-md-4">
+                                        <div class="card text-center border-0">
+                                            <div class="cardimg-wrap">
+                                                <img class="card-img-top" src="images/product-licence.png" alt="Card image cap">
+                                            </div>
+                                            <div class="card-body">
+                                                <h5 class="font-weight-bold font-18 m-1">Product Licensing</h5>
+                                                <p class="font-14">Assign licenses to your products to manage your files</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-4">
+                                        <div class="card text-center border-0">
+                                            <div class="cardimg-wrap">
+                                                <img class="card-img-top" src="images/digital-delivery.png" alt="Card image cap">
+                                            </div>
+                                            <div class="card-body">
+                                                <h5 class="font-weight-bold font-18 m-1">Digital Delivery</h5>
+                                                <p class="font-14">Sync your Shopify account with the DAP</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-4">
+                                        <div class="card text-center border-0">
+                                            <div class="cardimg-wrap">
+                                                <img class="card-img-top" src="images/customer-support.png" alt="Card image cap">
+                                            </div>
+                                            <div class="card-body">
+                                                <h5 class="font-weight-bold font-18 m-1">Customer support</h5>
+                                                <p class="font-14">Start selling your digital products with our feature loaded dashboard</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="container">
+                                    <div class="carousel slide mt-5" id="carousel-161417">
+                                        <ol class="carousel-indicators">
+                                            <li data-slide-to="0" data-target="#carousel-161417" class="active">
+                                            </li>
+                                            <li data-slide-to="1" data-target="#carousel-161417">
+                                            </li>
+                                            <li data-slide-to="2" data-target="#carousel-161417">
+                                            </li>
+                                        </ol>
+                                        <div class="carousel-inner">
+                                            <div class="carousel-item active">
+                                                <div class="d-flex">
+                                                    <div class="w-50 mr-3">
+                                                        <img class="img-fluid" src="images/dash-slide.png" alt="Generic placeholder image">
+                                                    </div>
+                                                    <div class="w-50 mt-3">
+                                                        <div class="text-center p-2">
+                                                            <h5 class="mt-3 font-weight-bold avenir-black font-18">Dashboard</h5>
+                                                            <p class="font-14">A Simple dashboard which helps you in monitoring all your sales at one stop.It also gives you insights about how your sales can be improved.</p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="carousel-item">
+                                                <div class="d-flex">
+                                                    <div class="w-50 mr-3">
+                                                        <img class="img-fluid" src="images/dash-slide.png" alt="Generic placeholder image">
+                                                    </div>
+                                                    <div class="w-50 mt-3">
+                                                        <div class="text-center p-2">
+                                                            <h5 class="mt-3 font-weight-bold avenir-black font-18">Dashboard</h5>
+                                                            <p class="font-14">A Simple dashboard which helps you in monitoring all your sales at one stop.It also gives you insights about how your sales can be improved.</p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="carousel-item ">
+                                                <div class="d-flex">
+                                                    <div class="w-50 mr-3 mt-3">
+                                                        <img class="img-fluid" src="images/dash-slide.png" alt="Generic placeholder image">
+                                                    </div>
+                                                    <div class="w-50">
+                                                        <div class="text-center p-2">
+                                                            <h5 class="mt-3 font-weight-bold avenir-black font-18">Dashboard</h5>
+                                                            <p class="font-14">A Simple dashboard which helps you in monitoring all your sales at one stop.It also gives you insights about how your sales can be improved.</p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <a class="carousel-control-prev" href="#carousel-161417" data-slide="prev"><span class="carousel-control-prev-icon"></span> <span class="sr-only">Previous</span></a> <a class="carousel-control-next" href="#carousel-161417" data-slide="next"><span class="carousel-control-next-icon"></span> <span class="sr-only">Next</span></a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Tab one plan content -->
+                        <div class="plans-wrap text-center p-3 mt-5">
+                            <h4 class="dap-title ">Our Plans and Pricing</h4>
+                            <p class="mb-0 font-12">( login to your account to choose one )</p>
+                            <button class="avenir-black trial-btn mb-4 mt-2">Free 7 Day Unlimited Trial</button>
+                            <p class="font-14">We always thrive for making your work easier with our products and hence we have <br> free trial for you with all our features with unlimited orders per day</p>
+                        </div>
+                        <section class="basic-plan-section">
+                            <h4 class="dap-title text-center mt-5 mb-3">Our Standard Plans</h4>
+                            <div class="d-flex flex-wrap justify-content-center">
+                                <div class="plan-card text-center mt-1 mb-5">
+                                    <h3 class="plan-header font-16 p-2">Free Plan</h3>
+                                    <div class="plan-body">
+                                        <h4 class="plan-value p-2">Free</h4>
+                                        <p class="card-text font-14 pr-3 pl-3 pt-0 pb-3">Limit 10 orders per day <br>upto 5mb storage space</p>
+                                    </div>
+                                </div>
+                                <div class="plan-card text-center mt-1 mb-5">
+                                    <h3 class="plan-header font-16 p-2">Copper Plan</h3>
+                                    <div class="plan-body">
+                                        <h4 class="plan-value p-2">$25 / month</h4>
+                                        <p class="card-text font-14 pr-3 pl-3 pt-0 pb-3">Limit 20 orders per day <br> upto 1gb storage space</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </section>
+                        <section class="pro-plan-section">
+                            <h4 class="dap-title text-center mt-4 mb-3">Our Premium Plans</h4>
+                            <div class="d-flex flex-wrap justify-content-center">
+                                <div class="plan-card text-center mt-1 mb-5">
+                                    <h3 class="plan-header font-16 p-2">Silver Plan</h3>
+                                    <div class="plan-body">
+                                        <h4 class="plan-value p-2">$40 / month</h4>
+                                        <p class="card-text font-14 pr-3 pl-3 pt-0 pb-3">Limit 30 orders per day <br>upto 2gb storage space</p>
+                                    </div>
+                                </div>
+                                <div class="plan-card text-center mt-1 mb-5">
+                                    <h3 class="plan-header font-16 p-2">Gold Plan</h3>
+                                    <div class="plan-body">
+                                        <h4 class="plan-value p-2">$50 / month</h4>
+                                        <p class="card-text font-14 pr-3 pl-3 pt-0 pb-3">Limit 40 orders per day <br>upto 4gb storage space</p>
+                                    </div>
+                                </div>
+                                <div class="plan-card text-center mt-1 mb-5">
+                                    <h3 class="plan-header font-16 p-2">Platinum Plan</h3>
+                                    <div class="plan-body">
+                                        <h4 class="plan-value p-2">$100 / month</h4>
+                                        <p class="card-text font-14 pr-3 pl-3 pt-0 pb-3">Unlimited orders per day <br>upto 30gb storage space</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </section>
+                    </div>
+                    <!-- Tab two content -->
+                    <div class="tab-pane" id="tab2">
+                        <div class="row">
+                            <div class="col-md-12">
+                                <div class="tabimg-wrap">
+                                    <img alt="Bootstrap Image Preview" class="img-fluid" src="images/cust-review.png">
+                                </div>
+                                <div class="dap-twrap text-center mb-5">
+                                    <h5 class="dap-title">
+                                        Customer review management
+                                    </h5>
+                                    <p class="card-text">
+                                        This helps in getting valuable feedback from the customers, and take necessary steps to improve the business further. From managing the review system in helping you identify the root cause of your negative feedback and working towards improving your overall service along with posting the positive feedback to attract new customers for your business.
+                                    </p>
+                                </div>
+                                <h3 class="dap-title text-center mb-5">
+                                    Our core features
+                                </h3>
+                                <div class="row">
+                                    <div class="col-md-4">
+                                        <div class="card text-center border-0">
+                                            <div class="cardimg-wrap">
+                                                <img class="card-img-top" src="images/product-licence.png" alt="Card image cap">
+                                            </div>
+                                            <div class="card-body">
+                                                <h5 class="font-weight-bold font-18 m-1">Feedback System</h5>
+                                                <p class="font-14">Schedule feedback forms after your digital order is delivered</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-4">
+                                        <div class="card text-center border-0">
+                                            <div class="cardimg-wrap">
+                                                <img class="card-img-top" src="images/digital-delivery.png" alt="Card image cap">
+                                            </div>
+                                            <div class="card-body">
+                                                <h5 class="font-weight-bold font-18 m-1">Feedback monitoring</h5>
+                                                <p class="font-14">Monitoring your feedback and also publishing them in your preferred channels</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-4">
+                                        <div class="card text-center border-0">
+                                            <div class="cardimg-wrap">
+                                                <img class="card-img-top" src="images/customer-support.png" alt="Card image cap">
+                                            </div>
+                                            <div class="card-body">
+                                                <h5 class="font-weight-bold font-18 m-1">Customer support</h5>
+                                                <p class="font-14">Start selling your digital products with our feature loaded dashboard</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!--  carousel--->
+                                <div class="container">
+                                    <div class="carousel slide mt-5" id="carousel-cust">
+                                        <ol class="carousel-indicators">
+                                            <li data-slide-to="0" data-target="#carousel-cust" class="active">
+                                            </li>
+                                            <li data-slide-to="1" data-target="#carousel-cust">
+                                            </li>
+                                            <li data-slide-to="2" data-target="#carousel-cust">
+                                            </li>
+                                        </ol>
+                                        <div class="carousel-inner">
+                                            <div class="carousel-item active">
+                                                <div class="d-flex">
+                                                    <div class="w-50 mr-3">
+                                                        <img class="img-fluid" src="images/dash-slide.png" alt="Generic placeholder image">
+                                                    </div>
+                                                    <div class="w-50 mt-3">
+                                                        <div class="text-center p-2">
+                                                            <h5 class="mt-3 font-weight-bold avenir-black font-18">Email Trigger</h5>
+                                                            <p class="font-14">Set you preferred time after which the email should be triggered to get your service feedback</p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="carousel-item">
+                                                <div class="d-flex">
+                                                    <div class="w-50 mr-3">
+                                                        <img class="img-fluid" src="images/dash-slide.png" alt="Generic placeholder image">
+                                                    </div>
+                                                    <div class="w-50 mt-3">
+                                                        <div class="text-center p-2">
+                                                            <h5 class="mt-3 font-weight-bold avenir-black font-18">Dashboard</h5>
+                                                            <p class="font-14">A Simple dashboard which helps you in monitoring all your sales at one stop.It also gives you insights about how your sales can be improved.</p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="carousel-item ">
+                                                <div class="d-flex">
+                                                    <div class="w-50 mr-3 mt-3">
+                                                        <img class="img-fluid" src="images/dash-slide.png" alt="Generic placeholder image">
+                                                    </div>
+                                                    <div class="w-50">
+                                                        <div class="text-center p-2">
+                                                            <h5 class="mt-3 font-weight-bold avenir-black font-18">Dashboard</h5>
+                                                            <p class="font-14">A Simple dashboard which helps you in monitoring all your sales at one stop.It also gives you insights about how your sales can be improved.</p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <a class="carousel-control-prev" href="#carousel-cust" data-slide="prev"><span class="carousel-control-prev-icon"></span> <span class="sr-only">Previous</span></a> <a class="carousel-control-next" href="#carousel-cust" data-slide="next"><span class="carousel-control-next-icon"></span> <span class="sr-only">Next</span></a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="plans-wrap text-center p-3 mt-5">
+                            <h4 class="dap-title ">Our Plans and Pricing</h4>
+                            <p class="mb-0 font-12">( login to your account to choose one )</p>
+                            <button class="avenir-black trial-btn mb-4 mt-2">Free 7 Day Unlimited Trial</button>
+                            <p class="font-14">We always thrive for making your work easier with our products and hence we have <br> free trial for you with all our features with unlimited orders per day</p>
+                        </div>
+                        <!-- Tab two plan content -->
+                        <div class="container">
+                            <section class="plan-section">
+                                <h4 class="dap-title text-center mt-5 mb-3">Our Standard Plans</h4>
+                                <div class="d-flex flex-wrap justify-content-center">
+                                    <div class="plan-card text-center mt-1 mb-5">
+                                        <h3 class="plan-header font-16 p-2">Bronze Plan</h3>
+                                        <div class="plan-body">
+                                            <h4 class="plan-value p-2">$24.99 / month</h4>
+                                            <p class="card-text font-14 pr-3 pl-3 pt-0 pb-3">Limit 30 orders per day <br>upto 2gb storage space</p>
+                                        </div>
+                                    </div>
+                                    <div class="plan-card text-center mt-1 mb-5">
+                                        <h3 class="plan-header font-16 p-2">Silver Plan</h3>
+                                        <div class="plan-body">
+                                            <h4 class="plan-value p-2">$49.99 / month</h4>
+                                            <p class="card-text font-14 pr-3 pl-3 pt-0 pb-3">Limit 40 orders per day <br> upto 4gb storage space</p>
+                                        </div>
+                                    </div>
+                                    <div class="plan-card text-center mt-1 mb-5">
+                                        <h3 class="plan-header font-16 p-2">Gold Plan</h3>
+                                        <div class="plan-body">
+                                            <h4 class="plan-value p-2">$65 / month</h4>
+                                            <p class="card-text font-14 pr-3 pl-3 pt-0 pb-3">Unlimited orders per day <br> upto 30gb storage space</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </section>
+                            <section class="pro-plan-section">
+                                <h4 class="dap-title text-center mt-4 mb-3">Our Premium Plans</h4>
+                                <div class="d-flex flex-wrap justify-content-center">
+                                    <div class="plan-card text-center mt-1 mb-5">
+                                        <h3 class="plan-header font-16 p-2">Platinum Plan</h3>
+                                        <div class="plan-body">
+                                            <h4 class="plan-value p-2">$99.99 / month</h4>
+                                            <p class="card-text font-14 pr-3 pl-3 pt-0 pb-3">up to 5000 emails / month</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </section>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+    <div class="container">
+        <div class="cont-wrapper text-center mb-5">
+            <h5 class="avenir-black font-16">Prefer a customised plan not listed above? Please contact us for a customised quotation.</h5>
+            <button class="dapcont-btn mt-2 avenir-black">Contact us</button>
+        </div>
+    </div>
+    <div class="container">
+        <div class="customer-block mb-5">
+            <div class="media p-4">
+                <div class="pic-wrapper">
+                    <img class="d-flex align-self-center img-fluid" src="images/cust-review.png" alt="Generic placeholder image">
+                </div>
+                <div class="media-body">
+                    <p class="mb-0 mt-3 avenir-black font-18">Also Checkout out our Customer Review Management</p>
+                    <p class="mb-0 mt-3 font-14">Your one stop solution for managing your customer reviews and building your brand identity. From sending feedback forms to publishing the feedback rating on your preferred platform.</p>
+                    <h5 class="text-right avenir-black font-14 m-3">View more details > </h5>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+    <div class="footer-block font-14 p-3">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="row">
+                        <div class="col-md-5">
+                            <div class="brand-wrap">
+                                <img class="img-fluid" src="images/brand.png">
+                            </div>
+                            <p class="font-12">Digital Assistant Pro is a shopify plugin which helps the business owners to sell their digital products online with ease. We are constantly working towards solving your business problems to bring your more plugins.</p>
+                            <p class="avenir-black font-12">© 2020 Digital Assistant Pro. All rights reserved.</p>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="footer-cont-wrap mt-3">
+                                <h5 class="avenir-black mb-3">Contact us</h5>
+                                <p class="cont-title">Phone </p>
+                                <p><a href="tel:(54) 11 5777 6655">(54) 11 5777 6655</a> </p>
+                                <p class="cont-title mt-3">Email<p>
+                                    </p> <a href="mailto:hello@digitalassistantpro.com">hello@digitalassistantpro.com</a> </p>
+                            </div>
+                        </div>
+                        <div class="col-md-3">
+                            <div class="footer-block-wrap mt-3">
+                                <h5 class="avenir-black mb-3">Follow us at</h5>
+                                <ul class="social-wrap">
+                                    <li><img class="img-fluid" src="images/fb.png"> </li>
+                                    <li><img class="img-fluid" src="images/linkedin.png"></li>
+                                    <li><img class="img-fluid" src="images/twitter.png"></li>
+                                    <li><img class="img-fluid" src="images/fb.png"></li>
+                                </ul>
+                                <p>Privacy policy</p>
+                                <p>Terms and conditions</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
